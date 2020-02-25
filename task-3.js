@@ -13,7 +13,7 @@ class Storage {
   }
 
   removeItem(item) {
-    this.items.splice(this.items.includes(item), 1);
+   this.items = this.items.filter(value => value !== item)
   }
 }
 
